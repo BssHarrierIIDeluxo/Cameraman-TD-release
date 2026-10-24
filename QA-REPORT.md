@@ -8,7 +8,7 @@ All 38 protected modules recovered the exact original Luau source in a local Lua
 
 The full public installer passed isolated checks for all 39 modules, both complete PNGs, automation disabled on a fresh installation, preservation of user settings, no writes on repeat installation, and rollback after a simulated filesystem error. These checks use a simulated filesystem and a stubbed UI launch.
 
-The actual 5.1 MB local bundle compiled and launched in Real on Windows in 5.76 seconds. The exact published raw URL then launched the hub in Real in 7.96 seconds. A round/server change interrupted the tool response, but the successful launch proof was persisted and read back afterward. The existing Easy farm continued; the console returned zero errors/warnings after the HTTP launch.
+The updated 5,169,541-byte protected bundle launched through the exact published raw URL in Real on Windows in 7.28 seconds. The successful launch proof was persisted and read back afterward despite an interrupted tool response. The original macro selection and Easy farming remained enabled; the console returned zero errors/warnings after the HTTP launch.
 
 Ready-made macro update: the new protected bundle loaded in Real, and its installed catalog modules passed the same 39 logic assertions and 48 layout assertions as the source version. The catalog UI's Select action selected the imported macro. A fresh live Toilet City Easy match using that imported template completed all 45/45 actions and ended Won. The testing account differs from the original recording author. The prior macro selection and farming were restored afterward. Card layouts passed at widths 260/540 in Russian and English; this is not a physical phone test.
 
