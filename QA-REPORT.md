@@ -1,19 +1,19 @@
-# Public release verification — 2026-10-24
+# UI and macro-selection verification — 2026-10-24
 
-Artifact: script.lua, 5,184,986 bytes.
-SHA-256: 7a149ff457e282c064105c9d1b36c1ee06c99986da0e97d1020a0927f041472e
-Git blob SHA-1: bbaad154832e6718c08c931f327f991a93300cf2
+Artifact: script.lua, 5,214,056 bytes.
+SHA-256: e20b4a405bd8202a8d00b43aafac6a7d8a982bd8ef50eebd12d9a823f150d789
+Git blob SHA-1: 5f34c100c6afe3ac894a74a372a12c0015ddb22c
 
-All 39 protected modules recovered the exact original Luau source in a local Lua 5.1 round-trip check. The original source checks and earlier broad beta QA remain applicable to that recovered source.
+The hub now uses Source Sans Pro across native and custom text, with 18px element titles, 16px descriptions, consistent padding, preserved touch target sizes and aligned semantic header icons. Currency artwork retains its original colors and proportions. Journal events have separate title/time/body areas; adjacent duplicate entries are grouped for display without changing saved history. Summon history uses larger portraits and clearer metadata spacing.
 
-The full public installer passed isolated checks for all 40 modules, both complete PNGs, automation disabled on a fresh installation, preservation of user settings, no writes on repeat installation, and rollback after a simulated filesystem error. These checks use a simulated filesystem and a stubbed UI launch.
+Macro choices are restored separately for each account. Foreign recordings are excluded from the account's menu; their contents and inventory IDs are never rewritten. An account with no complete own recording cannot inherit an active foreign farm. A foreign-record preflight reports the account mismatch without misleading inventory or speed warnings. Repeated identical lobby readiness failures do not generate repeated notices.
 
-The updated 5,169,541-byte protected bundle launched through the exact published raw URL in Real on Windows in 7.28 seconds. The successful launch proof was persisted and read back afterward despite an interrupted tool response. The original macro selection and Easy farming remained enabled; the console returned zero errors/warnings after the HTTP launch.
+Fresh focused checks passed: presentation10, account-selection/journal15, preflight11, Home model17, Home plan/journal19, ready-made macro39, ready-made card layouts48, visual/history7, text-wrap15, mobile/desktop Home metric layouts and five semantic icon invariants. All changed production files passed Real's analyzer without errors or warnings.
 
-Ready-made macro update: the new protected bundle loaded in Real, and its installed catalog modules passed the same 39 logic assertions and 48 layout assertions as the source version. The catalog UI's Select action selected the imported macro. A fresh live Toilet City Easy match using that imported template completed all 45/45 actions and ended Won. The testing account differs from the original recording author. The prior macro selection and farming were restored afterward. Card layouts passed at widths 260/540 in Russian and English; this is not a physical phone test.
+All ten tabs were visited in the live client, with no vertical-text findings. One font family was confirmed throughout the menu. The current account's selected recording passed preflight and farming remained enabled. The exact public raw URL loaded the new 5,214,056-byte bundle in Real on Windows in 6.83 seconds; its startup proof was read back afterward and the console returned no problems.
 
-Focused checks against the installed protected modules passed: Hunt goal statistics/pool (28), Hunt state and routing (14), threshold summoning (14), Home queue/journal (19), profiles (13), preflight (11), and six pause invariants. No user settings were reset by these isolated tests.
+All41 protected project modules recovered the exact original source in the local round-trip check. The complete installer passed isolated filesystem checks for all42 Lua modules and both PNGs, safe defaults, preserving user settings, repeat installation and rollback after a simulated write failure. Tests were repeated against protected modules for the earlier ready-made catalog and the current account-selection/style code.
 
-Unverified: physical phones/touch devices, executors other than Real, every map/difficulty/loadout, real Halloween purchases/opening during this run, actual rare-target drops, and external Discord delivery. No claim of exhaustive coverage or guaranteed source secrecy is made.
+Earlier ready-made macro evidence remains valid: a fresh Toilet City Easy match using the rebound template ended Won with45/45 actions, on an account different from the recording author.
 
-Text-layout regression fix: 15 focused checks passed for narrow startup width, hidden-page visibility, restore, language/font/scale changes, multiline descriptions, native geometry preservation, unrelated custom UI and cleanup. Six live page visits (Home/Main/Halloween/Macro/Settings/Home) checked 144 native label appearances with no vertical-text findings. The final public HTTP bundle launched in 10.94 seconds and the console returned no problems. A discarded experiment with fixed heights was rolled back and was never published; the final implementation preserves native automatic sizing.
+Unverified: physical phones/Delta, every map/loadout, real Halloween spending during this update, actual rare-target drops and external webhook delivery. No Discord messages were sent during these checks.
