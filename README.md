@@ -30,6 +30,8 @@ WindUI by Footages is bundled under the MIT license. See [THIRD_PARTY_NOTICES.tx
 
 ## Verification
 
-All 38 protected modules were checked for exact source recovery. The installer passed isolated checks for all 39 modules, both image payloads, safe defaults, settings preservation, repeat installation, and rollback after a simulated write failure. Catalog checks passed 39 assertions, including two account bindings, missing/unequipped units, collision preservation and no automatic start. Card layout checks passed 48 assertions at widths 260/540 in Russian/English. See [QA-REPORT.md](QA-REPORT.md) for runtime evidence and limits.
+All 39 protected modules were checked for exact source recovery. The installer passed isolated checks for all 40 modules, both image payloads, safe defaults, settings preservation, repeat installation, and rollback after a simulated write failure. Catalog checks passed 39 assertions, including two account bindings, missing/unequipped units, collision preservation and no automatic start. Card layout checks passed 48 assertions at widths 260/540 in Russian/English. See [QA-REPORT.md](QA-REPORT.md) for runtime evidence and limits.
 
 This does not certify every map, every executor, real-money/game-currency purchases, or physical phone interaction. No external Discord messages were sent during these checks.
+
+Native text layout fix: hidden/minimized pages no longer wrap labels against a tiny initial width. Short labels use one line; long descriptions retain wrapping after valid geometry is available. Existing automatic heights and widths remain unchanged.
